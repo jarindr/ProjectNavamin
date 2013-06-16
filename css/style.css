@@ -6,6 +6,16 @@
 	text-shadow: 2px 2px 2px #000;
 	font-size: 14px;
 }
+.topnav ul li:hover{
+	text-decoration: underline;
+	color:white;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+	}
 .menubar ul li{
 	display: inline;
 	color: #C4C4C4;
@@ -14,16 +24,36 @@
 	font-family: "MS Serif", "New York", serif;
 	text-shadow: 2px 2px 2px #000;
 	font-size: 14px;
+	padding-top:8px;
+	padding-bottom:5px;
+	margin-bottom:5px;
+
+}
+
+.menubar ul li:hover{
+	color:green;
+	text-shadow: none;	
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 .topnav{
 	padding-left: 2%;
 	padding-top: 0.3%;
 	padding-bottom: 0.3%;
-	background-color:#303030;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #262626), color-stop(1, #333333));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endColorstr='#333333');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#262626', endColorstr='#333333')";
+	background-image: -ms-linear-gradient(top left, #262626 0%, #333333 100%);
+	zoom 1;
 }
+
 .menubar{
 	text-align: center;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #104022), color-stop(1, #0c2e17));
+	background-image: -ms-linear-gradient(top left, #104022 0%, #0c2e17 100%);
 	padding-top:0.4%;
 	padding-bottom:0.4%;
 	border-top: 1px solid #0E3D10;
@@ -32,6 +62,407 @@
 .logo{
 	text-align: center;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #104022), color-stop(1, #0c2e17));
-	border-top: 1px solid #555;
+	background-image: -ms-linear-gradient(top, #104022 0%, #0c2e17 100%);
+
+	border-top: 1px solid #0A5200;
 	border-bottom: 1px solid #111;
+	padding-top:0.5%;
+	padding-bottom:0.5%;
+}
+.gray-container{
+	padding-left:10%;
+	padding-right:10%;
+	background-color:#E9E9E9;
+	padding-top:2%;
+	padding-bottom:2%;
+
+}
+.white-container{
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-top:2%;
+}
+
+#pnews {
+	margin-bottom:13px;
+	margin-top:5px;
+	font-family: Cambria, Georgia, serif;
+	color: #141414;
+	font-size: 17px;
+}
+#pnews:hover{
+	color:#4D4E82;
+	text-decoration:underline;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#pevent{
+	margin:0;
+	padding:0;
+	color:#2E8227;
+	font-size: 15px;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-weight: 500;
+}
+#pevent:hover{
+	color:black;
+	text-decoration:underline;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#petime{
+	margin:0;
+	padding:0;
+	color:#686868;
+	font-size: 13px;
+	font-family: "Lucida Bright", Georgia, serif;
+
+}
+
+#psocial{
+
+}
+
+#hnews{
+	font-family:"bebasneue";
+	font-size: 35px;
+	color: #2E2E2E;
+}
+
+#events{
+	font-family:"bebasneue";
+	font-size: 35px;
+	color: #286F2C;
+}
+
+#lnews{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #2E2E2E;
+	font-weight: 900;
+}
+#buttonsections{
+	padding-bottom:2%;
+	border-bottom: 1px solid #CBCBCB;
+
+}
+#socialtext{
+	margin-bottom:4%;
+	font-family: "bebasneue";
+	font-size: 30px;
+	letter-spacing:3px;
+	color: #367FE7;
+	display:block;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+}
+#socialtext:hover{
+	color:#0300AE;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+}
+#youtubetext{
+	margin-bottom:4%;
+	font-family: "bebasneue";
+	font-size: 30px;
+	color:#AD3030;
+	letter-spacing:3px;
+	display:block;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+
+}
+#youtubetext:hover{
+	color:#670000;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#newsheader{
+	padding-bottom:1%;
+}
+#button1{
+	padding-top:2%;
+	padding-bottom:2%;
+	margin-bottom:2%;
+	padding-left:2%;
+	background-color:#8a9045;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:white;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    opacity: 1.0;
+}
+#button1:hover{
+opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button2{
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:2%;
+	background-color:#3e769a;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:white;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button2:hover{
+opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button3{
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:2%;
+	background-color:#7d7b7b;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:white;
+	    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button3:hover{
+	opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button4{
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:2%;
+	background-color:#a88b60;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:white;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button4:hover{
+opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button5{
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-left:2%;
+	background-color:#8f3931;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:white;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#button5:hover{
+opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.boxes{
+	padding-top:4%;
+	padding-bottom:4%;
+	border-bottom: 1px solid #CBCBCB;
+}
+#social{
+	padding-top:4%;
+
+}
+#youtube{
+	padding-top:4%;
+	
+}
+.span6 h1{
+	padding-bottom:2%;
+}
+.datebox{
+	border: 1px solid #E4E4E4;
+	width:5em;
+	margin-right:5%;
+	margin-bottom:8%;
+
+}
+.daybox{
+	text-align: center;
+	border-bottom: 1px solid #E4E4E4;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	background-color:#22672A;
+	color:white;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin:0;
+
+}
+.monthbox{
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin:0;
+	color:white;
+	background-color:#676767;
+}
+#event1{
+	margin-bottom:10%;
+	display:block;
+}
+#event2{
+	margin-bottom:10%;
+	display:block;
+}
+
+#event3{
+	margin-bottom:10%;
+	display:block;
+}
+
+#event4{
+	margin-bottom:10%;
+	display:block;
+}
+
+#event5{
+	margin-bottom:10%;
+	display:block;
+}
+#eventheader{
+	margin-bottom: 5%;
+}
+.botnavbar{
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #104022), color-stop(1, #0c2e17));
+	padding-top:2%;
+	padding-bottom:2%;
+	border-top: 1px solid #376331;
+	border-bottom: 1px solid #073900;
+}
+.topfooter{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #104022), color-stop(1, #0c2e17));
+	color:#ABABAB;
+	text-align: center;
+	border-bottom: 1px solid #111;
+}
+.span2 ul li{
+	text-decoration: none;
+	font-size: 12px;
+	list-style: none;
+	line-height: 200%;
+	color:#ABABAB;
+
+}
+.span2 ul li:hover{
+	text-decoration: underline;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    color:white;
+}
+#left{
+	border-right:1px solid #31442E;
+	padding-right:1%;
+	text-align: right;
+
+
+}
+#right{
+	border-left:1px solid #31442E;
+	text-align: left;
+	padding-left:1%;
+}
+#midlogo{
+	max-width:100%;
+	text-align: center;
+}
+.lastfooter{
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #262626), color-stop(1, #333333));
+	border-top: 1px solid #414141;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+#abouttext ul li{
+	display:block;
+	color:gray;
+	text-decoration: none;
+	text-shadow:none;
+	font-size: 14px;
+	text-align: left;
+	padding-bottom:5px;
+	margin: 0;
+	line-height: 100%;
+
+}
+
+#hiddenabout{
+	display: block;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	background-color: white;
+	padding-bottom:0.5%;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
