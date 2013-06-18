@@ -1774,7 +1774,6 @@
 
  /* CAROUSEL CLASS DEFINITION
   * ========================= */
-
   var Carousel = function (element, options) {
     this.$element = $(element)
     this.$indicators = this.$element.find('.carousel-indicators')
@@ -1834,6 +1833,7 @@
   , next: function () {
       if (this.sliding) return
       return this.slide('next')
+
     }
 
   , prev: function () {
@@ -1851,27 +1851,24 @@
         , e
 
       this.sliding = true
-
       isCycling && this.pause()
-
       $next = $next.length ? $next : this.$element.find('.item')[fallback]()
-
       e = $.Event('slide', {
         relatedTarget: $next[0]
       , direction: direction
       })
 
-      if ($next.hasClass('active')) return
-
+      if ($next.hasClass('active')) 
+        return
       if (this.$indicators.length) {
         this.$indicators.find('.active').removeClass('active')
         this.$element.one('slid', function () {
           var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])
           $nextIndicator && $nextIndicator.addClass('active')
         })
-      }
-
+      }       
       if ($.support.transition && this.$element.hasClass('slide')) {
+
         this.$element.trigger(e)
         if (e.isDefaultPrevented()) return
         $next.addClass(type)
@@ -1947,6 +1944,7 @@
     $target.carousel(options)
 
     if (slideIndex = $this.attr('data-slide-to')) {
+
       $target.data('carousel').pause().to(slideIndex).cycle()
     }
 

@@ -22,11 +22,10 @@
 	padding-right: 3%;
 	padding-left:3%;
 	font-family: "MS Serif", "New York", serif;
-	text-shadow: 2px 2px 2px #000;
 	font-size: 14px;
-	padding-top:8px;
-	padding-bottom:5px;
-	margin-bottom:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+
 
 }
 
@@ -39,10 +38,11 @@
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
+
 .topnav{
 	padding-left: 2%;
-	padding-top: 0.3%;
-	padding-bottom: 0.3%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #262626), color-stop(1, #333333));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endColorstr='#333333');
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#262626', endColorstr='#333333')";
@@ -63,19 +63,23 @@
 	text-align: center;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #104022), color-stop(1, #0c2e17));
 	background-image: -ms-linear-gradient(top, #104022 0%, #0c2e17 100%);
-
 	border-top: 1px solid #0A5200;
 	border-bottom: 1px solid #111;
 	padding-top:0.5%;
 	padding-bottom:0.5%;
+	display: block;
+
 }
 .gray-container{
 	padding-left:10%;
 	padding-right:10%;
 	background-color:#E9E9E9;
-	padding-top:2%;
 	padding-bottom:2%;
+		padding-top:2%;
 
+}
+#youtube{
+	margin-bottom:2%;
 }
 .white-container{
 	padding-left: 10%;
@@ -87,7 +91,7 @@
 	margin-bottom:13px;
 	margin-top:5px;
 	font-family: Cambria, Georgia, serif;
-	color: #141414;
+	color: gray;
 	font-size: 17px;
 }
 #pnews:hover{
@@ -393,8 +397,8 @@ opacity: 0.8;
 	border-bottom: 1px solid #073900;
 }
 .topfooter{
-	padding-top: 1%;
-	padding-bottom: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #104022), color-stop(1, #0c2e17));
 	color:#ABABAB;
 	text-align: center;
@@ -447,6 +451,21 @@ opacity: 0.8;
 	text-shadow:none;
 	font-size: 14px;
 	text-align: left;
+	padding:0;
+	padding-bottom:5px;
+	margin: 0;
+	line-height: 100%;
+
+}
+
+#admissiontext ul li{
+	display:block;
+	color:gray;
+	text-decoration: none;
+	text-shadow:none;
+	font-size: 14px;
+	text-align: left;
+	padding:0;
 	padding-bottom:5px;
 	margin: 0;
 	line-height: 100%;
@@ -454,15 +473,162 @@ opacity: 0.8;
 }
 
 #hiddenabout{
-	display: block;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	height: 0px;
+	overflow: hidden;
+	width: 100%;
+	background-color: white;
+	padding-bottom:0.5%;
+	margin-top:5px;
+}
+
+#hiddenadmission{
+	display: none;
+	height: 0px;
+	overflow: hidden;
 	position: absolute;
 	z-index: 1000;
 	width: 100%;
 	background-color: white;
 	padding-bottom:0.5%;
-	-webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+	margin-top:5px;
+}
+#hiddenacedemics{
+	display: none;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	background-color: white;
+	padding-bottom:0.5%;
+	margin-top:5px;
+}
+#hiddenres{
+	display: none;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	background-color: white;
+	padding-bottom:0.5%;
+	margin-top:5px;
+}
+#hiddenmed{
+	display: none;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	background-color: white;
+	padding-bottom:0.5%;
+	margin-top:5px;
+}
+#hiddensiv{
+	display: none;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	background-color: white;
+	padding-bottom:0.5%;
+	margin-top:5px;
+}
+#hiddencam{
+	display: none;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	background-color: white;
+	padding-bottom:0.5%;
+	margin-top:5px;
+}
+
+.goright{
+	text-align: right;
+}
+.goleft{
+	text-align: left;
+}
+.float-left{
+	float:left;
+}
+.float-right{
+	float:right;
+}
+
+#search input[type="text"] {
+    background: url(../img/search-white.png) no-repeat 10px 6px  #444;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #d7d7d7;
+    width: 150px;
+    height: 6px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    background: url(../img/search-dark.png) no-repeat 10px 6px #fcfcfc;
+    color: #6a6f75;
+    width: 180px;
+        height: 6px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+ }
+
+ .seach-form{
+height: 25px;
+display:block;
+overflow: hidden;
+float: right;
+margin-right:2%;
+ }
+ #lang{
+float: right;
+text-align: right;
+margin-left:10px;
+
+ }
+ #caption1{
+ 	background-color:blue;
+ }
+.boxhover:hover{
+	opacity: 0.5;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+}
+.boxhover2:hover{
+	opacity: 0.5;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#imagecaption{
+	position: absolute;
 }
